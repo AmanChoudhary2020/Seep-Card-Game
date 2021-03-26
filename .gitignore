@@ -1,0 +1,5 @@
+# Visual debugger configurations
+.vscode/
+.vs/
+*.vcxproj
+*.vcxproj.*
