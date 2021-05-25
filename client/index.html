@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Seep Card Game | HOME </title>
+        <meta name="description" content="Seep Card Game">
+        <meta name="author" content="Aman Choudhary">
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    </head>
+
+    <body>
+        <header class="main-header">
+            <nav class="nav main-nav">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="tutorial.html">HOW TO PLAY</a></ li>
+                    <li><a href="background.html">BACKGROUND</a></li>
+                    <li><a href="aboutme.html">ABOUT ME</a></li>
+                </ul>
+            </nav>
+            <h1 class="title title-large">Seep Card Game</h1>
+        </header>
+
+        <section id="main" >
+            <div>
+                <button id="create" class="button">Create Game</button>
+                <p id="createId"></p>
+            </div>
+            </br>
+            <div id = "joindiv">
+                <button id="join" class="button">Join Game</button>
+                <input type="text" name="name" id="gameid">
+            </div>
+        </section>
+        
+        <div id="phaser-example" class="phaser"></div>
+
+        <footer class="main-footer">
+            <div class="main-footer-container">
+                <h3>Aman Choudhary</h3>
+                <ul class="nav">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="tutorial.html">HOW TO PLAY</a></li>
+                    <li><a href="background.html">BACKGROUND</a></li>
+                    <li><a href="aboutme.html">ABOUT ME</a></li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>
