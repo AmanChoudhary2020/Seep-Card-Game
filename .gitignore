@@ -1,7 +1,0 @@
-# Visual debugger configurations
-.vscode/*
-.vs/
-*.vcxproj
-*.vcxproj.*
-!.vscode/settings.json
-
