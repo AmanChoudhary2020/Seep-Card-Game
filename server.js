@@ -18,11 +18,12 @@ io.on('connection', (socket) => {
 
     console.log("players length", players.length);
     if(players.length === 1) {
+        console.log('emitted isplayerA')
         io.emit('isPlayerA');
     }
 
-    socket.on('dealCards', () => {
-        io.emit('dealCards');
+    socket.on('dealCards', (data) => {
+        io.emit('dealCards',data);
     });
 
     socket.on('cardPlayed', (gameObject, isPlayerA) => {
@@ -39,6 +40,10 @@ io.on('connection', (socket) => {
         id = Math.random();
         console.log('game created', id);
         socket.emit('create',id);
+    });
+
+    socket.on('declareRank', () => {
+        io.sockets.emit('declareRank');
     });
 
     socket.on('join', (data) => {
